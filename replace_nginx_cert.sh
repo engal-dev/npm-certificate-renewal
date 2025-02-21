@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Moving into NPM main directory
+cd ..
+
 # Base path assuming the script is launched from main directory
 BASE_DIR="$(pwd)"
 CONF_DIR="$BASE_DIR/data/nginx/proxy_host"
