@@ -32,16 +32,18 @@ This Bash script automates the process of replacing SSL certificate names inside
 
 ### Running the Script
 
-1. Open a terminal and navigate to the main `nginx-proxy-manager` directory
-2. Make the script executable (only required the first time):
+1. Stop the service of NPM
+2. Open a terminal and navigate to the main `nginx-proxy-manager` directory
+3. Make the script executable (only required the first time):
    ```sh
    chmod +x replace_cert_nginx.sh
    ```
-3. Run the script:
+4. Run the script:
    ```sh
    ./replace_cert_nginx.sh
    ```
-4. Follow the on-screen prompts to select the certificate names.
+5. Follow the on-screen prompts to select the certificate names
+6. Restart the service of NPM.
 
 ## Backup and Safety Measures
 
@@ -57,4 +59,3 @@ This Bash script automates the process of replacing SSL certificate names inside
 ## License
 
 This script is open-source and provided as-is. Use at your own risk.
-
