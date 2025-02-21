@@ -48,6 +48,6 @@ find "$CONF_DIR" -type f -name "*.conf" -exec cp {} "$BACKUP_DIR" \;
 echo "Backup completed in folder: $BACKUP_DIR"
 
 # Perform the replacement in all .conf files
-find "$CONF_DIR" -type f -name "*.conf" -exec sed -i "s/$OLD_CERT/$NEW_CERT/g" {} +
+sudo find "$CONF_DIR" -type f -name "*.conf" -exec sudo sed -i "s/$OLD_CERT/$NEW_CERT/g" {} +
 
 echo "Replacement completed."
